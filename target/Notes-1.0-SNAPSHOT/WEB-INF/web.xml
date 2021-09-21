@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="3.1" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd">
+    <servlet>
+        <servlet-name>SaveNotesServlet</servlet-name>
+        <servlet-class>com.servlets.SaveNotesServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>DeleteNoteServlet</servlet-name>
+        <servlet-class>com.servlets.DeleteNoteServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>UpdateNote</servlet-name>
+        <servlet-class>com.servlets.UpdateNote</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>SaveNotesServlet</servlet-name>
+        <url-pattern>/SaveNotesServlet</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>DeleteNoteServlet</servlet-name>
+        <url-pattern>/DeleteNoteServlet</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>UpdateNote</servlet-name>
+        <url-pattern>/UpdateNote</url-pattern>
+    </servlet-mapping>
+    <session-config>
+        <session-timeout>
+            30
+        </session-timeout>
+    </session-config>
+</web-app>
